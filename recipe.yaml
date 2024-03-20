@@ -1,17 +1,17 @@
 $engine: 3
 $onesync: on
-name: CFX Default FiveM
-description: Recipe for the base resources required to run a minimal FiveM server.
+name: NF
+description: NF
 
 tasks: 
   # Download default CFX resources
   - action: download_github
-    src: https://github.com/citizenfx/cfx-server-data
+    src: https://github.com/servercfg/DevoNetwork/tree/master
     ref: master
     subpath: resources
     dest: ./resources
 
   # Download default server.cfg for FiveM
   - action: download_file
-    url: https://raw.githubusercontent.com/tabarra/CFX-Default-recipe/main/server.cfg
+    url: https://raw.githubusercontent.com/servercfg/DevoNetwork/master/server/server.cfg
     path: ./server.cfg
