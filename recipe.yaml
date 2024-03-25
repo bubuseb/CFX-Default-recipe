@@ -4,14 +4,14 @@ name: CFX Default FiveM
 description: Recipe for the base resources required to run a minimal FiveM server.
 
 tasks: 
-  # Download default CFX resources
+  # Download resources
   - action: download_github
     src: https://github.com/bubuseb/cfx-server-data/tree/main
     ref: master
     subpath: resources
     dest: resources
 
-  # Download default server.cfg for FiveM
+  # Download server.cfg
   - action: download_file
     url: https://raw.githubusercontent.com/tabarra/CFX-Default-recipe/main/server.cfg
     path: ./server.cfg
