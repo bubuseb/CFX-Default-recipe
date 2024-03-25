@@ -7,11 +7,3 @@ tasks:
   # Download default CFX resources
     - action: download_file
     src: https://github.com/bubuseb/cfx-server-data/archive/refs/heads/main.zip
-    ref: master
-    subpath: resources
-    dest: ./resources
-
-  # Download default server.cfg for FiveM
-  - action: download_file
-    url: https://raw.githubusercontent.com/tabarra/CFX-Default-recipe/main/server.cfg
-    path: ./server.cfg
