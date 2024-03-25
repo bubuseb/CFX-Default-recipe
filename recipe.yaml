@@ -1,17 +1,19 @@
-$engine: 3
-$onesync: on
-name: CFX Default FiveM
-description: Recipe for the base resources required to run a minimal FiveM server.
+name: PlumeESX2
+version: v1.2.3
+author: Toybarra
+description: A full featured (8 jobs) and highly configurable yet lightweight ESX v2 base that can be easily extendable. 
+
+variables:
+    dbHost: localhost
+    dbUsername: root
+    dbPassword: ""
+    dbName: null
 
 tasks: 
-  # Download resources
-  - action: download_github
-    src: https://github.com/bubuseb/cfx-server-data.git
-    ref: master
-    subpath: resources
-    dest: resources
+    - action: download_file
+      url: https://github.com/bubuseb/cfx-server-data/archive/refs/heads/main.zip
+      path: ./tmp/cfx-server-data.zip
 
-  # Download server.cfg
-  - action: download_file
-    url: https://raw.githubusercontent.com/tabarra/CFX-Default-recipe/main/server.cfg
-    path: ./server.cfg
+    - action: another_task
+      optionA: aaaa
+      optionB: bbbbbb
