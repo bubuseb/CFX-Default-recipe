@@ -14,6 +14,6 @@ tasks:
       url: https://github.com/bubuseb/cfx-server-data/archive/refs/heads/main.zip
       path: ./tmp/cfx-server-data.zip
 
-    - action: another_task
-      optionA: aaaa
-      optionB: bbbbbb
+  - action: download_file
+    url: https://raw.githubusercontent.com/tabarra/CFX-Default-recipe/main/server.cfg
+    path: ./server.cfg
